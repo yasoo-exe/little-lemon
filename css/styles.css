@@ -2,6 +2,7 @@
     background-color: black;
     color: white;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -34,4 +35,26 @@ a {
 .callToAction:hover {
     background-color: yellow;
     color: black;
+}
+
+a:hover {
+    box-shadow: 0 3px yellow;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkolivegreen;
+    height: 200px;
+    margin: 2% 0;
+}
+
+.feature-cards {
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+align-content: center;
+gap: 30px;
+height: 100px;
+margin: 2% 5%
 }
