@@ -7,28 +7,42 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <img
-        src="./images/Asset 16@4x.png"
-        alt="mainSiteLogo"
-        class="logo"
-        width="400"
-      />
-    </header>
-    <nav>
-      <ul class="navbar">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#" class="callToAction">Reserve a Table</a></li>
-      </ul>
-    </nav>
+    <div class="top-section">
+      <header>
+        <a href="./index.html">
+          <img
+            src="./images/Asset 16@4x.png"
+            alt="mainSiteLogo"
+            class="logo"
+            width="400"
+          />
+        </a>
+      </header>
+      <nav>
+        <ul class="navbar">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#" class="callToAction">Reserve a Table</a></li>
+        </ul>
+      </nav>
+    </div>
     <main>
-      <div class="hero">
-        the hero card will go here, it needs to be 100% viewport width
-      </div>
-      <div class="feature-cards">
-        <div class="card">
+      <article class="hero">
+        <div>
+          <h1>Savor the Mediterranean Magic</h1>
+          <p>
+            Little Lemon captures the essence of the Mediterranean, serving up
+            sun-soaked flavors in every bite. From zesty kebabs to savory mezze,
+            indulge in a culinary escape that transports you to the heart of
+            Mediterranean bliss. Welcome to a taste of the sunny coast at Little
+            Lemon - where every dish is a celebration.
+          </p>
+        </div>
+        <img src="./images/hero.jpg" class="heroimg" />
+      </article>
+      <section class="feature-cards">
+        <article class="card">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis
           voluptatem placeat temporibus laboriosam tempora, possimus delectus
           illo hic, quam ad numquam alias voluptates doloribus tempore
@@ -36,8 +50,8 @@
           consectetur adipisicing elit. Dicta, dolorum unde cum sequi, veniam
           reiciendis mollitia illo repudiandae, eius quidem omnis voluptate! Sit
           quia repellat cumque eum et ad ipsam!
-        </div>
-        <div class="card">
+        </article>
+        <article class="card">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
           doloribus ducimus facilis, possimus dicta harum, in fugit omnis
           perferendis quae, ut necessitatibus eius aut veniam repellendus quasi
@@ -45,8 +59,8 @@
           elit. Debitis deserunt magni fugiat laborum error autem et voluptas
           sed fugit sequi cupiditate quibusdam consequuntur libero quasi, ab
           temporibus doloribus aliquam. Quae!
-        </div>
-        <div class="card">
+        </article>
+        <article class="card">
           3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
           reprehenderit accusamus modi, recusandae aperiam voluptatem sunt.
           Consequatur corrupti ad earum nemo qui dolor? Omnis nobis earum vero.
@@ -54,10 +68,15 @@
           consectetur adipisicing elit. Itaque impedit dolor veniam dolore et
           sapiente natus rerum odio eaque illo ex aliquam quisquam officia amet
           nobis consequatur, modi facere atque!
-        </div>
-      </div>
+        </article>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div>
+        <img src="./images/Asset 7@4x.png" alt="footer-logo" width="50" />
+      </div>
+      <div>Copyright &copy; 2024 Little Lemon, All Rights Reserved</div>
+    </footer>
     <script src="./js/script.js"></script>
   </body>
 </html>
