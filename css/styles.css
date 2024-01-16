@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    background-color: #f5f5dc;
 }
 
 /* header and navbar start */
@@ -12,7 +13,6 @@ body {
 .top-section {
     height: 100%;
     padding: 2% 0 0 0;
-    width: 60%;
     margin: 0 auto;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -26,7 +26,9 @@ body {
 ul.navbar {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
     align-items:center;
     margin: 2% auto;
 }
@@ -66,6 +68,7 @@ a:hover {
     flex-direction: column;
     width: 60%;
     margin: 2% auto;
+    
 }
 
 .hero div {
@@ -75,7 +78,7 @@ a:hover {
 }
 
 .hero div h1 {
-    font-size: 4em;
+    font-size: 3em;
 }
 
 .hero div p {
@@ -86,6 +89,7 @@ a:hover {
 .heroimg {
     margin: 5% auto;
     width: 100%;
+    height: 10%;
 }
 
 .feature-cards {
@@ -93,12 +97,52 @@ a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
     gap: 30px;
-    margin: 2% 5%;
+    margin: 0 auto;
+    width: 80%;
+    gap: 5%;
+    padding: 0 0 5% 0;
+    background-color: #f0fff0; /* Honeydew or light sage green */
+    
+    
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 12px -6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.card-content {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+p {
+    color: #525151;
+    font-size: 1.1rem;
 }
 
 footer {
     display: grid;
+    box-shadow: 0  6px  20px  0 inset rgba(0, 0, 0, 0.19);
     grid-template-columns: 1fr 3fr;
     justify-items: center;
     align-items: center;
+    padding: 4%;
+    font-size: 1.5rem;
 }
